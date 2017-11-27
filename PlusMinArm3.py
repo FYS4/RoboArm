@@ -37,7 +37,7 @@ while(1):
                         print "minimum"
                 pwm1.ChangeDutyCycle(place1)
                 sleep(0.1)
-                print "Je plaats is",place1
+                print "Your place is",place1
         if GPIO.input(button2)==0:
                 print "Button 2 was Pressed"
                 place1=place1+0.25
@@ -46,7 +46,7 @@ while(1):
                         print "maximum"
                 pwm1.ChangeDutyCycle(place1)
                 sleep(0.1)
-                print "Je plaats is",place1
+                print "Your place is",place1
 	if GPIO.input(button3)==0:
                 print "Button 3 was Pressed"
                 place2=place2-0.25
@@ -55,7 +55,7 @@ while(1):
                         print "minimum"
                 pwm2.ChangeDutyCycle(place2)
                 sleep(0.1)
-                print "Je plaats is",place2
+                print "Your place is",place2
         if GPIO.input(button4)==0:
                 print "Button 4 was Pressed"
                 place2=place2+0.25
@@ -64,7 +64,7 @@ while(1):
                         print "maximum"
                 pwm2.ChangeDutyCycle(place2)
                 sleep(0.1)
-                print "Je plaats is",place2
+                print "Your place is",place2
 	if GPIO.input(button5)==0:
                 print "Button 5 was Pressed"
                 place3=place3-0.25
@@ -73,7 +73,7 @@ while(1):
                         print "minimum"
                 pwm3.ChangeDutyCycle(place3)
                 sleep(0.1)
-                print "Je plaats is",place3
+                print "Your place is",place3
         if GPIO.input(button6)==0:
                 print "Button 6 was Pressed"
                 place3=place3+0.25
@@ -82,5 +82,5 @@ while(1):
                         print "maximum"
                 pwm3.ChangeDutyCycle(place3)
                 sleep(0.1)
-                print "Je plaats is",place3
+                print "Your place is",place3
 
