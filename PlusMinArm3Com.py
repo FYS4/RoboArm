@@ -39,60 +39,64 @@ place1=7.5
 place2=7.5
 place3=7.5
 
+#slaap en variabele
+sleep1=0.01
+waarde1=0.05
+
 #als knop ingedrukt is verplaats de arm als minimum is bereikt stopt de arm met bewegen
 while(1):
         if GPIO.input(button1)==0:
                 print "Button 1 was Pressed"
-                place1=place1-0.25
+                place1=place1-waarde1
                 if place1<2.5:
                         place1=2.5
                         print "minimum"
                 pwm1.ChangeDutyCycle(place1)
-                sleep(0.1)
+                sleep(sleep1)
                 print "Your place is",place1
         if GPIO.input(button2)==0:
                 print "Button 2 was Pressed"
-                place1=place1+0.25
+                place1=place1+waarde1
                 if place1>12.5:
                         place1=12.5
                         print "maximum"
                 pwm1.ChangeDutyCycle(place1)
-                sleep(0.1)
+                sleep(sleep1)
                 print "Your place is",place1
 		if GPIO.input(button3)==0:
                 print "Button 3 was Pressed"
-                place2=place2-0.25
+                place2=place2-waarde1
                 if place2<2.5:
                         place2=2.5
                         print "minimum"
                 pwm2.ChangeDutyCycle(place2)
-                sleep(0.1)
+                sleep(sleep1)
                 print "Your place is",place2
         if GPIO.input(button4)==0:
                 print "Button 4 was Pressed"
-                place2=place2+0.25
+                place2=place2+waarde1
                 if place2>12.5:
                         place2=12.5
                         print "maximum"
                 pwm2.ChangeDutyCycle(place2)
-                sleep(0.1)
+                sleep(sleep1)
                 print "Your place is",place2
 		if GPIO.input(button5)==0:
                 print "Button 5 was Pressed"
-                place3=place3-0.25
+                place3=place3-waarde1
                 if place3<2.5:
                         place3=2.5
                         print "minimum"
                 pwm3.ChangeDutyCycle(place3)
-                sleep(0.1)
+                sleep(sleep1)
                 print "Your place is",place3
         if GPIO.input(button6)==0:
                 print "Button 6 was Pressed"
-                place3=place3+0.25
+                place3=place3+waarde1
                 if place3>12.5:
                         place3=12.5
                         print "maximum"
                 pwm3.ChangeDutyCycle(place3)
-                sleep(0.1)
+                sleep(sleep1)
                 print "Your place is",place3
 
